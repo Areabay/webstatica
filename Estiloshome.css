@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Fondo claro y limpio */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  text-align: center;
+  background-color: transparent; /* Fondo transparente, como en Google */
+  padding: 0; /* Sin padding, simple */
+}
+
+/* Estilos para el logo */
+.logo {
+  margin-bottom: 40px; /* Separación entre el logo y la barra de búsqueda */
+}
+
+.logo img {
+  width: 100px; /* Tamaño similar al logo de Google */
+}
+
+/* Estilos para la barra de búsqueda */
+input[type="text"] {
+  width: 500px;
+  max-width: 800px; /* Ancho ajustado para que sea similar al de Google */
+  height: 44px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px; /* Bordes redondeados */
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); /* Sombra sutil */
+  box-sizing: border-box;
+  margin-bottom: 30px; /* Separación entre la barra de búsqueda y los botones */
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ffffff; /* Cambio de color en el borde al enfocar */
+  outline: none;
+  box-shadow: 0 1px 6px rgba(66, 133, 244, 0.5); /* Sombra más intensa */
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+  color: #5f6368;
+  margin: 0 10px; /* Separación entre botones */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f1f3f4; /* Color de fondo más claro al pasar el mouse */
+}
+
+button:focus {
+  outline: none; /* Elimina el borde de enfoque */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+  input[type="text"] {
+      width: 90%; /* Ajuste en pantallas pequeñas */
+  }
+}
